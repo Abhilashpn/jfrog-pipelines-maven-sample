@@ -1,4 +1,4 @@
 gitProvider: abhitest
-artifactory: noctest
+artifactory: noctest.jfrog.io
 repoPath: Abhilashpn/jfrog-pipelines-maven-sample
 deployerRepo: abhi-maven-pipeline-local
