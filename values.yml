@@ -1,4 +1,4 @@
-gitProvider: manishas_jfrog
+gitProvider: Abhilashpn
 artifactory: demoArt
-repoPath: manishas-jfrog/jfrog-pipelines-maven-sample
+repoPath: Abhilashpn/jfrog-pipelines-maven-sample
 deployerRepo: maven-local
