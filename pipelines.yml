@@ -2,7 +2,7 @@ template: true   # required for local templates
 valuesFilePath: ./values.yml
 
 resources:
-  - name: mvn_repo
+  - name: mvn_repo1
     type: GitRepo
     configuration:
       path: {{ .Values.repoPath }}
@@ -14,7 +14,7 @@ resources:
       sourceArtifactory: {{ .Values.artifactory }}
 
 pipelines:
-  - name: demo_maven
+  - name: demo_maven1
     steps:
       - name: mvn_build_step
         type: MvnBuild
@@ -22,7 +22,7 @@ pipelines:
           deployerSnapshotRepo: {{ .Values.deployerRepo }}
           deployerReleaseRepo: {{ .Values.deployerRepo }}
           inputResources:
-            - name: mvn_repo
+            - name: mvn_repo1
           integrations:
             - name: {{ .Values.artifactory }}
 
